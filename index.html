@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinica Vértice</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/img/favicon_vertice_max.png" type="image/png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="navbar-container">
+            <a href="#home">
+                <img src="assets/img/icone_vertice.png" alt="Ícone Clínica Vértice" class="icone-vertice-img">
+            </a>
+            <div class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link">Início</a>
+                <a href="#sobre" class="nav-link">Sobre Nós</a>
+                <a href="#espaco" class="nav-link">Espaço</a>
+                <a href="#servicos" class="nav-link">Serviços</a>
+                <a href="#profissionais" class="nav-link">Profissionais</a>
+                <a href="#contato" class="nav-link">Contato</a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="main-section" id="home">
+            <div class="main-image-container">
+                <img class="main-image" src="assets/img/imagem-principal-1.svg" alt="Clínica Vértice">
+            </div>
+        </section>
+        <section class="about-section" id="sobre">
+            <h2>Sobre Nós</h2>
+            <p><b>A Vértice</b> nasceu da paixão por <b>cuidar e transformar vidas</b>. Unimos <b>ciência de alta qualidade, técnica especializada e humanização do cuidado</b> para oferecer um <b>atendimento individualizado</b>, baseado nas melhores evidências e focado em <b>resultados reais e duradouros</b>.</p>
+            <p>Fundada pelo <b>fisioterapeuta Pedro Castro</b>, a clínica reúne profissionais especializados que compartilham da mesma visão: <b>tratar com conhecimento, sensibilidade e compromisso</b> focado no que realmente <b>importa para você.</b></p>
+            <p>Aqui, cada pessoa é <b>ouvida, compreendida e tratada de forma completa</b>, com atenção à <b>sua história</b> e aos <b>seus objetivos.</b> Para isso, profissionais e pacientes <b>caminham juntos</b> rumo à reconquista da <b>liberdade</b> através do <b>movimento.</b></p>
+            <a class="contact-me" href="https://wa.me/5584999732011" target="_blank">
+                <i class="fa-solid fa-message"></i>
+                Comece sua reabilitação com quem entende você.
+            </a>
+        </section>
+        <section class="numbers-section">
+            <h2>Nossos Diferenciais</h2>
+            <p>Você no centro do cuidado sempre.</p>
+            <div class="info-section">
+                <div class="info-card">
+                    <i class="fa-solid fa-users info-icon"></i>
+                    <div class="info-title">Atendimentos</div>
+                    <div class="info-value">+4.600</div>
+                </div>
+                <div class="info-card">
+                    <i class="fa-solid fa-globe info-icon"></i>
+                    <div class="info-title">Consultoria Online</div>
+                    <div class="info-value">24h</div>
+                    </div>
+                <div class="info-card">
+                    <i class="fa-solid fa-star info-icon"></i>
+                    <div class="info-title">Avaliação Média</div>
+                    <div class="info-value">5/5</div>
+                </div>
+                <div class="info-card">
+                    <i class="fa-solid fa-building info-icon"></i>
+                    <div class="info-title">Espaço</div>
+                    <div class="info-value">+80 m²</div>
+                </div>
+            </div>
+        </section>
+        <section class="space-section" id="espaco">
+            <h2>Nosso Espaço</h2>
+            <p>Conheça nosso espaço projetado para proporcionar conforto e bem-estar durante o seu tratamento. Contamos com salas equipadas com tecnologia de ponta, salas climatizadas e um ambiente acolhedor que favorece a recuperação.</p>
+            <div class="gallery">
+                <img class="space-image" src="assets/img/foto_clinica_1.jpg" alt="Sala de Fisioterapia">
+                <img class="space-image" src="assets/img/foto_clinica_2.jpg" alt="Equipamentos Modernos">
+                <img class="space-image" src="assets/img/foto_clinica_3.jpg" alt="Ambiente Aconchegante">
+                <!-- Adicione mais imagens se desejar -->
+            </div>
+            <p>Nosso espaço é projetado para atender às necessidades de todos os nossos pacientes, oferecendo um ambiente seguro e confortável. Cada detalhe foi pensado para garantir a melhor experiência possível durante o seu tratamento.</p>
+            <p>Venha nos visitar e conhecer de perto as instalações da Clínica Vértice.</p>
+            <p>Estamos localizados no coração da cidade, com fácil acesso e estacionamento disponível.</p>
+
+            <!-- Lightbox Modal -->
+            <div id="lightbox" class="lightbox" style="display:none;">
+                <span class="close">&times;</span>
+                <img class="lightbox-content" id="lightbox-img">
+                <div id="caption"></div>
+            </div>
+            </section>
+        <section class="services-section" id="servicos">
+            <h2>Como podemos te ajudar</h2>
+            <p>Planos de Tratamento personalizados para cada fase da sua reabilitação.</p>
+            <div class="services-container">
+                <div class="service-card">
+                    <h3>Tratamento não-farmacológico da dor</h3>
+                    <p>Tratamos dores musculoesqueléticas com avaliação minuciosa, escuta ativa e acompanhamento contínuo. Cada atendimento é individualizado, respeitando seus limites e objetivos, com foco na sua autonomia e resultado duradouro.</p>
+                    <ul class="check-list">
+                        <li>Dores na coluna (lombar, torácica e cervical)</li>
+                        <li>Hérnia de disco e ciatalgia</li>
+                        <li>Cefaleias cervicogênicas</li>
+                        <li>Disfunções da ATM</li>
+                        <li>Tensões musculares persistentes</li>
+                        <li>Ombro congelado</li>
+                        <li>Dor anterior no joelho</li>
+                        <li>Tendinopatias e fascite plantar</li>
+                        <li>Condições crônicas como fibromialgia e artrose.</li>
+                    </ul>
+                    <a class="link-saiba-mais"href="https://wa.me/5584999732011" target="_blank">
+                        <i class="fa-solid fa-circle-plus"></i>
+                        Saiba mais
+                    </a>
+                </div>
+                <div class="service-card">
+                    <h3>Pré e Pós-operatórios Traumato-Ortopédicos</h3>
+                    <p>Acompanhamos você antes e depois da cirurgia, com foco na preparação do corpo, alívio da dor, retorno funcional e prevenção de complicações. Cada plano é estruturado com metas progressivas e reavaliações contínuas para garantir uma recuperação eficiente.</p>
+                    <ul class="check-list">
+                        <li>Fraturas</li>
+                        <li>Artroplastias de Quadril, Joelho e Ombro (próteses)</li>
+                        <li>Estabilização de luxação recidivante (Bankart/Latarjet)</li>
+                        <li>Capsulotomia (liberação de ombro congelado)</li>
+                        <li>Meniscectomias e suturas meniscais</li>
+                        <li>Reconstrução do ligamento cruzado anterior (LCA)</li>
+                        <li>Cirurgias na coluna (discectomias e artrodeses)</li>
+                        <li>Reparo de tendões e tecidos moles</li>
+                    </ul>
+                    <a class="link-saiba-mais"href="https://wa.me/5584999732011" target="_blank">
+                        <i class="fa-solid fa-circle-plus"></i>
+                        Saiba mais
+                    </a>
+                </div>
+                <div class="service-card">
+                    <h3>Fisioterapia Esportiva</h3>
+                    <p>Acompanhamos atletas e praticantes de atividade física de todos os níveis, com foco na reabilitação, prevenção de lesões e retorno seguro ao esporte. Nossos planos terapêuticos são individualizados, baseados em uma avaliação precisa com equipamentos de alta tecnologia e alinhados às exigências da sua modalidade.</p>
+                    <ul class="check-list">
+                        <li>Distensões e lesões musculares</li>
+                        <li>Instabilidades, entorses e lesões ligamentares</li>
+                        <li>Lesões do manguito rotador e impacto subacromial</li>
+                        <li>Reconstrução do ligamento cruzado anterior (LCA)</li>
+                        <li>Condromalácia patelar e lesões no menisco</li>
+                        <li>Síndrome da banda iliotibial</li>
+                        <li>Pubalgia e canelite</li>
+                        <li>Recovery esportivo</li>
+                    </ul>
+                    <a class="link-saiba-mais"href="https://wa.me/5584999732011" target="_blank">
+                        <i class="fa-solid fa-circle-plus"></i>
+                        Saiba mais
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="resource-section">
+            <h2>Nossos Serviços</h2>
+            <p>Recursos e técnicas que potencializam sua recuperação</p>
+            <div class="info-section">
+                <div class="info-card">
+                    <img src="assets/img/terapia_manual_icon.png" alt="Terapia Manual">
+                    <div class="info-title">Terapia Manual</div>
+                    <p>Mobilizações e técnicas manuais para alívio da dor e ganho de mobilidade.</p>
+                </div>
+                <div class="info-card">
+                    <img src="assets/img/osteopatia_icon.png" alt="Osteopatia">
+                    <div class="info-title">Osteopatia</div>
+                    <p>Ajustes sutis e precisos para restaurar a função de articulações e tecidos.</p>
+                </div>
+                <div class="info-card">
+                    <img src="assets/img/quiropraxia_icon.png" alt="Quiropraxia">
+                    <div class="info-title">Quiropraxia</div>
+                    <p>Manipulações articulares seguras com foco em ganho de mobilidade.</p>
+                </div>
+                <div class="info-card">
+                    <img src="assets/img/cinesioterapia_icon.png" alt="Cinesioterapia">
+                    <div class="info-title">Cinesioterapia</div>
+                    <p>Exercícios terapêuticos para reabilitação funcional e fortalecimento.</p>
+                </div>
+                <div class="info-card">
+                    <img src="assets/img/eletroterapia_icon.png" alt="Eletroterapia">
+                    <div class="info-title">Eletroterapia</div>
+                    <p>Estímulos elétricos para modulação da dor e ativação muscular.</p>
+                </div>
+                <div class="info-card">
+                    <img src="assets/img/laserterapia_icon.png" alt="Laserterapia">
+                    <div class="info-title">Laserterapia</div>
+                    <p>Terapia com laser para regenerar, cicatrizar e controlar a dor.</p>
+                </div>
+                <div class="info-card">
+                    <img src="assets/img/dinamometria_icon.png" alt="Dinamometria">
+                    <div class="info-title">Dinamometria</div>
+                    <p>Avaliação de força muscular com alta precisão.</p>
+                </div>
+                <div class="info-card">
+                    <img src="assets/img/algometria_icon.png" alt="Algometria">
+                    <div class="info-title">Algometria</div>
+                    <p>Mapeamento de pontos dolorosos e sensibilidade.</p>
+                </div>
+                <div class="info-card">
+                    <img src="assets/img/cardio_icon.png" alt="Tecnologia Interativa">
+                    <div class="info-title">Tecnologia Interativa</div>
+                    <p>Equipamentos de ponta que potencializam o condicionamento físico com feedbacks objetivos e experiências imersivas.</p>
+                </div>
+            </div>
+        </section>
+        <section class="profissionais-section" id="profissionais">
+            <h2>Conheça os nossos Profissionais</h2>
+            <div class="profissionais">
+                <div class="profissional">
+                    <img src="assets/img/Foto_PHMC_VÉRTICE.jpg" alt="Dr. Pedro Castro" class="pedro-foto">
+                    <div class="descricao">
+                        <h3>Dr. Pedro Castro</h3>
+                        <p>Pedro Castro é a mente e o coração da Vértice, com mais de 7 anos de experiência clínica dedicada ao tratamento não farmacológico da dor. Sua paixão pelo cuidado humano, aliada ao rigor científico, guia cada atendimento, proporcionando soluções eficazes e personalizadas para aliviar dores agudas e crônicas. Como líder da equipe, Pedro constroi um ambiente colaborativo e inovador, unindo técnicas avançadas à empatia para devolver movimento, liberdade e qualidade de vida a cada paciente.</p>
+                        <p>Formações Acadêmicas:</p>
+                        <ul>
+                            <li>Graduado em Fisioterapia pela Universidade Federal do Rio Grande do Norte (UFRN) </li>
+                            <li>Pós-graduado em Osteopatia pela EBRAFIM</li>
+                            <li>Mestre em Fisioterapia pela UFRN</li>
+                            <li>Professor do curso de formação em Osteopatia (EBRAFIM)</li>
+                            <li>Professor da Especialização em Fisioterapia Traumato-ortopédica e Esportiva (UFRN)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="profissional invertido">
+                    <img src="assets/img/foto_YO_profissional.png" alt="Dr. Yves Oliveira">
+                    <div class="descricao">
+                        <h3>Dr. Yves Oliveira</h3>
+                        <p>Yves alia conhecimento técnico, experiência hospitalar e uma escuta atenta para transformar o processo de reabilitação em um caminho claro e acolhedor. Sua trajetória é marcada por dedicação à fisioterapia traumato-ortopédica, com foco em pacientes no pós-operatório — especialmente fraturas, cirurgias de coluna e casos complexos da ortopedia. Com didática apurada, acredita que educar o paciente é parte essencial do tratamento. Na Vértice, Dr. Yves atua com foco em reabilitação ortopédica pós-cirúrgica, cuidando de cada paciente com dedicação, clareza e compromisso com o resultado.</p>
+                        <p>Formações Acadêmicas:</p>
+                        <ul>
+                            <li>Graduado em Fisioterapia pela Universidade Federal do Rio Grande do Norte (UFRN)</li>
+                            <li>Especialista em Fisioterapia Traumato-Ortopédica pela UNIFESP (Residência – EBSERH)</li>
+                            <li>Fisioterapeuta no HUOL (Natal/RN) e SERFIS (Prefeitura de Santos/SP)</li>
+                            <li>Mentor da Vem Concursos (formação para provas e residência)</li>
+                    </div>
+                </div>
+                <div class="profissional">
+                    <img src="assets/img/foto_LB_profissional.png" alt="Dra. Luisa" class="luisa-foto">
+                    <div class="descricao">
+                        <h3>Dra. Luísa Braga</h3>
+                        <p>Com formação sólida, experiência internacional e foco na escuta qualificada, Luísa alia técnica, acolhimento e uma visão atual da fisioterapia para ajudar pacientes a retomarem sua rotina com segurança e autonomia. Na Vértice, atua com foco em reabilitação esportiva, sempre respeitando o tempo e o potencial de cada paciente. Para ela, movimento não é pressa; é processo, e cada etapa importa.</p>
+                        <p>Formações Acadêmicas:</p>
+                        <ul>
+                            <li>Graduada em Fisioterapia pela Universidade Federal do Rio Grande do Norte (UFRN)</li>
+                            <li>Preceptora da Liga de Fisioterapia Esportiva da UFRN (LEFERN)</li>
+                            <li>Aprimoramento clínico-acadêmico em Fisioterapia Ortopédica na Escola Superior de Saúde – Instituto Politécnico do Porto (Portugal)</li>
+                            <li>Capacitação em Quiropraxia Clínica, Conceito Mulligan e Método PHAST</li>
+                </div>
+            </div>
+        </section>
+        <section class="client-assessment-section">
+            <h2>Avaliações dos nossos clientes</h2>
+            <p>Conheça o que nossos pacientes dizem sobre a experiência na Vértice.</p>
+            <div class="carousel-wrapper">
+                <button class="prev">&#8592;</button>
+                <div class="client-assessment-container">
+                    <img src="assets/img/cliente_comentario_1.jpeg" alt="Avaliação Cliente 1" class="slide active">
+                    <img src="assets/img/cliente_comentario_2.jpeg" alt="Avaliação Cliente 2" class="slide">
+                    <img src="assets/img/cliente_comentario_3.jpeg" alt="Avaliação Cliente 3" class="slide">
+                    <img src="assets/img/cliente_comentario_4.jpeg" alt="Avaliação Cliente 4" class="slide">
+                    <img src="assets/img/cliente_comentario_5.jpeg" alt="Avaliação Cliente 5" class="slide">
+                    <img src="assets/img/cliente_comentario_6.jpeg" alt="Avaliação Cliente 6" class="slide">
+                    <img src="assets/img/cliente_comentario_7.jpeg" alt="Avaliação Cliente 7" class="slide">
+                </div>
+                <button class="next">&#8594;</button>
+            </div>
+        </section>
+        <section class="contact-section" id="contato">
+            <h2>Agende sua avaliação</h2>
+            <p>Comece uma nova fase com mais movimento, menos dor e muito mais qualidade de vida.</p>
+            <form class="contact-form" method="post">
+                <input type="text" name="name" id="nome" placeholder="Seu nome" required>
+                <input type="email" name="email" id="email" placeholder="Seu email" required>
+                <textarea name="message" id="mensagem" rows="5" placeholder="Sua mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col footer-col-logo">
+                <img src="assets/img/LOGO_Logo_GP_Versao_PREFERENCIAL-6.png" alt="Logo Clínica Vértice" class="footer-logo">
+            </div>
+            <div class="footer-col footer-col-social">
+                <h4>Redes Sociais & Contato</h4>
+                <div class="social-links">
+                <a href="https://www.instagram.com/_verticefisio/" class="social-link" target="_blank">
+                    <img src="assets/img/instagram-icon.png" alt="Instagram" class="social-icon">
+                    Instagram
+                </a>
+                <a href="https://wa.me/5584999732011" class="social-link" target="_blank">
+                    <img src="assets/img/whatsapp-icon.png" alt="WhatsApp" class="social-icon">
+                    WhatsApp
+                </a>
+                </div>
+                <div class="contact-info">
+                <p>Telefone: (84) 99973-2011</p>
+                <p>Email: contatoclinicavertice@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-col footer-col-info">
+                <h4>Endereço e Horário</h4>
+                <p><b>Ed. Blue Tower Center</b> - Sala 5</p>
+                <p>Avenida Lima e Silva, 1611 - Lagoa Nova - Natal/RN</p>
+                <p><b>Horário de funcionamento:</b> Segunda a Sexta, das 8h às 19h</p>
+            </div>
+            <div class="footer-bottom-bar">
+                <span>&copy; 2025 Clínica Vértice. Todos os direitos reservados.</span>
+                <span class="footer-credit">Desenvolvido por <a href="https://www.linkedin.com/in/arthur-furtunato-4994a7208/" target="_blank">Arthur Furtunato</a></span>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/navbar.js"></script>
+    <script src="assets/whatsapp.js"></script>
+    <script src="assets/light-box.js"></script>
+    <script src="assets/carrossel.js"></script>
+</body>
+</html>
