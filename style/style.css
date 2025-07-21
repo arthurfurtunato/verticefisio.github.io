@@ -941,6 +941,13 @@ section {
     transform 0.3s cubic-bezier(.4,2,.6,1);
 }
 
+.info-card img {
+  width: 55%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
 .info-card:hover {
   box-shadow: 0 8px 24px rgba(0,0,0,0.18);
   transform: translateY(-10px) scale(1.04);
@@ -948,6 +955,10 @@ section {
 
 .info-card:hover .info-icon {
   color: #0056b3;
+}
+
+.info-card:hover img {
+  filter: brightness(0.7) saturate(1.5);
 }
 
 .info-icon {
