@@ -32,9 +32,23 @@ section {
   padding: 0px 20px;
 }
 
+#icone-inicio {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+}
+
 .icone-vertice-img {
-  width: 120px;
+  width: 180px;
   height: auto;
+}
+
+@media (max-width: 768px) {
+  .icone-vertice-img {
+    width: 150px;
+    padding: 8px;
+  }
 }
 
 .nav-links {
@@ -46,6 +60,7 @@ section {
   color: #e5e7eb;
   text-decoration: none;
   font-weight: 500;
+  font-size: 1.1rem;
   position: relative;
   transition: color 0.3s;
   padding: 4px 0;
@@ -89,7 +104,18 @@ section {
   transition: 0.3s;
 }
 
+@media (max-width: 1000px) {
+  .nav-link {
+    font-size: 0.9rem;
+  }
+}
+
 @media (max-width: 768px) {
+  nav {
+    top: -1px;
+    left: -1px;
+  }
+
   .navbar-container {
     padding-right: 30px;
   }
@@ -127,7 +153,7 @@ section {
 
 .main-section {
   position: relative;
-  width: 100.1%;
+  width: 101%;
   max-height: 93vh;
   display: flex;
   align-items: center;
@@ -147,8 +173,8 @@ section {
 
 .about-section {
   padding: 50px 100px;
-  background: #f5f5f5;
-  color: #000e40;
+  background: #000e40;
+  color: #fff;
   text-align: center;
   height: 100vh;
 }
@@ -164,7 +190,7 @@ section {
   text-align: center;
   font-size: 1.8rem;
   margin-bottom: 10px;
-  color: #000e40;
+  color: #fff;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -172,7 +198,7 @@ section {
   text-align: justify;
   font-size: 1.2rem;
   margin-bottom: 20px;
-  color: #666;
+  color: #fff;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -181,7 +207,7 @@ section {
     padding: 36px 32px;
   }
   .about-section h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   .about-section h3 {
     font-size: 1.3rem;
@@ -197,28 +223,27 @@ section {
     padding: 24px 8px;
   }
   .about-section h2 {
-    font-size: 1.3rem;
+    font-size: 2.5rem;
   }
   .about-section h3 {
     font-size: 1.05rem;
   }
   .about-section p {
-    text-align: left;
-    padding: 0 2px;
+    text-align: justify;
+    padding: 0 10px;
   }
 }
 
 .contact-me {
   display: inline-flex;
   align-items: center;
-  background: #000e40; /* Cor do WhatsApp, pode trocar */
-  color: #fff;
+  background: #fff; /* Cor do WhatsApp, pode trocar */
+  color: #000e40;
   padding: 14px 28px;
   border-radius: 32px;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 600;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  gap: 14px;
   transition: background 0.3s, transform 0.2s;
   cursor: pointer;
   text-decoration: none;
@@ -232,7 +257,12 @@ section {
 
 .contact-me i {
   font-size: 1.3em;
-  color: #fff;
+  color: #000e40;
+}
+
+.contact-me .social-icon {
+  width: 55px;
+  height: 55px;
 }
 
 .space-section {
@@ -326,10 +356,11 @@ section {
     padding: 36px 24px;
   }
   .space-section h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   .space-section p {
     font-size: 1.05rem;
+    text-align: justify;
   }
   .gallery {
     grid-template-columns: repeat(2, 1fr);
@@ -345,12 +376,12 @@ section {
     padding: 20px 4px;
   }
   .space-section h2 {
-    font-size: 1.3rem;
+    font-size: 2.5rem;
   }
   .space-section p {
     font-size: 0.98rem;
-    padding: 0 2px;
-    text-align: left;
+    padding: 0 19px;
+    text-align: justify;
   }
   .gallery {
     grid-template-columns: 1fr;
@@ -368,7 +399,7 @@ section {
 
 .services-section {
   padding: 50px 0;
-  background: #111;
+  background: #000e40;
   color: #e5e7eb;
 }
 
@@ -391,6 +422,19 @@ section {
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
   padding: 24px;
+}
+
+@media (max-width: 600px) {
+  .services-section {
+    padding: 20px 4px;
+  }
+  .services-section h2 {
+    font-size: 2.5rem;
+  }
+  .services-section p {
+    font-size: 0.98rem;
+    padding: 0 2px;
+  }
 }
 
 .services-container .link-saiba-mais {
@@ -430,7 +474,7 @@ section {
 }
 
 .numbers-section {
-  background-color: #111;
+  background-color: #000e40;
   color: #e5e7eb;
   padding-bottom: 30px;
   padding-top: 30px;
@@ -498,8 +542,9 @@ section {
 
 .contact-section {
   padding: 50px 0;
-  background: #fff;
-  color: #000e40;
+  background: #111;
+  /* color: #000e40; */
+  color: #fff;
   height: auto;
 }
 
@@ -515,7 +560,7 @@ section {
   font-size: 1.2rem;
   margin-bottom: 20px;
   padding: 0 20px;
-  color: #666;
+  color: #dcbe96;
 }
 
 .contact-form {
@@ -532,6 +577,7 @@ section {
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
 }
 
 .contact-form button {
@@ -722,6 +768,12 @@ section {
   }
   .profissional .descricao p {
     font-size: 1.05rem;
+    text-align: justify;
+  }
+
+  .profissional .descricao ul li {
+    font-size: 1rem;
+    text-align: left;
   }
   .profissional img,
   .profissional .luisa-foto,
@@ -745,8 +797,9 @@ section {
   .profissional.invertido {
     flex-direction: column;
     text-align: center;
-    padding: 12px 4px;
+    padding: 12px 8px;
     margin-bottom: 28px;
+    margin-right: 15px;
   }
 
   .profissional img,
@@ -763,12 +816,22 @@ section {
 
   .profissional .descricao p {
     font-size: 0.98rem;
-    text-align: left;
-    padding: 0 2px;
+    text-align: justify;
+    padding: 0 4px;
   }
 }
 
 @media (max-width: 400px) {
+  .profissionais {
+    max-width: 100%;
+    padding: 0 4px;
+  }
+
+  .profissional {
+    padding: 8px 2px;
+    margin-bottom: 20px;
+  }
+
   .profissionais-section h2 {
     font-size: 1.2rem;
   }
@@ -917,6 +980,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   transition: box-shadow 0.3s cubic-bezier(0.4, 2, 0.6, 1),
     transform 0.3s cubic-bezier(0.4, 2, 0.6, 1);
 }
@@ -965,6 +1029,68 @@ section {
   }
 }
 
+.info-card-number {
+  flex: 1;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  padding: 32px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: box-shadow 0.3s cubic-bezier(0.4, 2, 0.6, 1),
+    transform 0.3s cubic-bezier(0.4, 2, 0.6, 1);
+}
+
+.info-card-number img {
+  width: 55%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.info-card-number:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  transform: translateY(-10px) scale(1.04);
+}
+
+.info-card-number:hover .info-icon {
+  color: #0056b3;
+}
+
+.info-card-number:hover img {
+  filter: brightness(0.7) saturate(1.5);
+}
+
+.info-card-number .info-icon {
+  font-size: 2.5rem;
+  color: #007bff;
+  margin-bottom: 16px;
+}
+.info-card-number .info-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.info-card-number .info-value {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #222;
+  animation: blur 0.3s ease-in-out;
+}
+
+@keyframes blur {
+  0% {
+    filter: blur(3px);
+  }
+  100% {
+    filter: blur(0);
+  }
+}
+
 .check-list {
   list-style: none;
   padding-left: 0;
@@ -979,7 +1105,7 @@ section {
 
 .resource-section {
   padding: 10px 0px 50px 0px;
-  background: #111;
+  background: #000e40;
   color: #fff;
 }
 
@@ -1057,9 +1183,10 @@ section {
 
 .client-assessment-section {
   padding: 50px 0px 0px 0px;
-  background: #111;
-  color: #fff;
+  background: #f5f5f5;
+  color: #000e40;
   text-align: center;
+  height: 100vh;
 }
 
 .client-assessment-section h2 {
@@ -1072,7 +1199,7 @@ section {
 .client-assessment-section p {
   text-align: center;
   font-size: 1.2rem;
-  color: #dcbe96;
+  color: #666;
 }
 
 .carousel-wrapper {
@@ -1121,7 +1248,7 @@ section {
 .next {
   background: none;
   border: none;
-  color: #fff;
+  color: #000;
   font-size: 2.5rem;
   cursor: pointer;
   padding: 0 18px;
@@ -1139,4 +1266,27 @@ section {
 .next:hover {
   color: #007bff;
   opacity: 1;
+}
+
+@media (max-width: 600px) {
+  .client-assessment-section {
+    height: 80vh;
+  }
+
+  .client-assessment-container {
+    width: 90%;
+    max-width: 100%;
+    height: 10%;
+  }
+  .client-assessment-container img {
+    width: 100%;
+    height: auto;
+  }
+  .prev,
+  .next {
+    font-size: 2rem;
+    padding: 0 12px;
+    height: 40px;
+    width: 40px;
+  }
 }
