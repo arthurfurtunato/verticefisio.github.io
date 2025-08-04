@@ -114,6 +114,7 @@ section {
   nav {
     top: -1px;
     left: -1px;
+    width: 101%;
   }
 
   .navbar-container {
