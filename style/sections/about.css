@@ -1,0 +1,95 @@
+.about-section {
+  padding: 50px 100px;
+  background: var(--color-primary);
+  color: var(--color-white);
+  text-align: center;
+  height: 100vh;
+}
+
+.about-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-family: "Parkinsans", sans-serif;
+}
+
+.about-section h3 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: var(--color-white);
+  font-family: "Montserrat", sans-serif;
+}
+
+.about-section p {
+  text-align: justify;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: var(--color-white);
+  font-family: "Open Sans", sans-serif;
+}
+
+@media (max-width: 900px) {
+  .about-section {
+    padding: 36px 32px;
+  }
+  .about-section h2 {
+    font-size: 2.5rem;
+  }
+  .about-section h3 {
+    font-size: 1.3rem;
+  }
+  .about-section p,
+  .about-section ul li {
+    font-size: 1.05rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-section {
+    padding: 24px 8px;
+  }
+  .about-section h2 {
+    font-size: 2.5rem;
+  }
+  .about-section h3 {
+    font-size: 1.05rem;
+  }
+  .about-section p {
+    text-align: justify;
+    padding: 0 10px;
+  }
+}
+
+.contact-me {
+  display: inline-flex;
+  align-items: center;
+  background: var(--color-white); /* Cor do WhatsApp, pode trocar */
+  color: var(--color-primary);
+  padding: 14px 28px;
+  border-radius: var(--radius-pill);
+  font-size: 1.2rem;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition:
+    background 0.3s,
+    transform 0.2s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.contact-me:hover {
+  background: #1ebe57;
+  transform: translateY(-2px) scale(1.03);
+  text-decoration: underline;
+}
+
+.contact-me i {
+  font-size: 1.3em;
+  color: var(--color-primary);
+}
+
+.contact-me .social-icon {
+  width: 55px;
+  height: 55px;
+}

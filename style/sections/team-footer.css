@@ -1,0 +1,325 @@
+.profissionais-section {
+  padding: 50px 0;
+  background: var(--color-surface);
+  color: var(--color-primary);
+}
+
+.profissionais-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-family: "Parkinsans", sans-serif;
+}
+
+.profissionais {
+  width: 100%;
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+.profissional {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  padding: 16px;
+  transition:
+    box-shadow 0.3s,
+    background-color 0.7s;
+  cursor: pointer;
+}
+
+.profissional img {
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+}
+
+.profissional .descricao ul li {
+  margin-bottom: 10px;
+}
+
+.profissional:hover {
+  background-color: var(--color-primary);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+}
+
+.profissional:hover .descricao h3 {
+  color: var(--color-white);
+}
+
+.profissional:hover .descricao p {
+  color: var(--color-text-light);
+}
+
+.profissional:hover .descricao ul li {
+  color: var(--color-text-light);
+}
+
+.profissional:hover img {
+  transform: scale(1.08);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
+}
+
+.profissional img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  object-position: 50% 15%;
+  border-radius: 50%;
+  margin-right: 32px;
+}
+
+.profissional .luisa-foto {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  object-position: 50% 50%;
+  border-radius: 50%;
+  margin-right: 32px;
+}
+
+.profissional .pedro-foto {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  object-position: 50% 40%;
+  border-radius: 50%;
+  margin-right: 32px;
+}
+
+.profissional .descricao {
+  flex: 1;
+}
+
+.profissional .descricao h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: var(--color-primary);
+}
+
+.profissional .descricao p {
+  font-size: 1.2rem;
+  color: var(--color-text-muted);
+  text-align: justify;
+}
+
+.profissional .descricao ul li {
+  font-size: 1.1rem;
+  color: var(--color-text-muted);
+}
+
+.profissional.invertido {
+  flex-direction: row-reverse;
+}
+
+.profissional.invertido img {
+  margin-right: 0;
+  margin-left: 32px;
+}
+
+@media (max-width: 1000px) {
+  .profissionais {
+    max-width: 95%;
+  }
+  .profissionais-section h2 {
+    font-size: 2rem;
+  }
+  .profissional .descricao h3 {
+    font-size: 1.3rem;
+  }
+  .profissional .descricao p {
+    font-size: 1.05rem;
+    text-align: justify;
+  }
+
+  .profissional .descricao ul li {
+    font-size: 1rem;
+    text-align: left;
+  }
+  .profissional img,
+  .profissional .luisa-foto,
+  .profissional .pedro-foto {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 700px) {
+  .profissionais-section {
+    padding: 32px 0;
+  }
+
+  .profissionais {
+    max-width: 100%;
+    padding: 0 8px;
+  }
+
+  .profissional,
+  .profissional.invertido {
+    flex-direction: column;
+    text-align: center;
+    padding: 12px 8px;
+    margin-bottom: 28px;
+    margin-right: 15px;
+  }
+
+  .profissional img,
+  .profissional .luisa-foto,
+  .profissional .pedro-foto {
+    margin: 0 0 12px 0;
+    width: 100px;
+    height: 100px;
+  }
+
+  .profissional .descricao h3 {
+    font-size: 1.1rem;
+  }
+
+  .profissional .descricao p {
+    font-size: 0.98rem;
+    text-align: justify;
+    padding: 0 4px;
+  }
+}
+
+@media (max-width: 400px) {
+  .profissionais {
+    max-width: 100%;
+    padding: 0 4px;
+  }
+
+  .profissional {
+    padding: 8px 2px;
+    margin-bottom: 20px;
+  }
+
+  .profissionais-section h2 {
+    font-size: 1.2rem;
+  }
+  .profissional .descricao h3 {
+    font-size: 0.98rem;
+  }
+  .profissional .descricao p {
+    font-size: 0.92rem;
+  }
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--space-xl);
+  padding: 40px 24px 24px 24px;
+  background: var(--color-primary);
+  color: var(--color-white);
+  flex-wrap: wrap;
+}
+
+.footer-col {
+  flex: 1 1 0;
+  min-width: 220px;
+  max-width: 350px;
+}
+
+.footer-col-logo {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.footer-logo {
+  max-width: 280px;
+  height: auto;
+}
+
+.footer-col-social h4 {
+  margin-bottom: 12px;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  margin-bottom: 10px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  color: var(--color-white);
+  text-decoration: none;
+  font-size: 1rem;
+  gap: var(--space-sm);
+  transition: color 0.2s;
+}
+
+.social-link:hover {
+  color: #25d366;
+}
+
+.social-icon {
+  width: 35px;
+  height: 35px;
+}
+
+.contact-info p {
+  margin: 2px 0;
+  font-size: 0.98rem;
+}
+
+.footer-col-info p {
+  margin: 6px 0;
+  font-size: 0.98rem;
+}
+
+.footer-bottom-bar {
+  width: 100%;
+  background: var(--color-primary);
+  color: #bbb;
+  text-align: center;
+  font-size: 0.95rem;
+  padding: 10px 8px 8px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.footer-bottom-bar .footer-credit {
+  font-size: 0.92rem;
+  color: #bbb;
+}
+
+.footer-bottom-bar .footer-credit a {
+  color: var(--color-white);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-bottom-bar .footer-credit a:hover {
+  color: var(--color-accent);
+}
+
+@media (max-width: 600px) {
+  .footer-bottom-bar {
+    font-size: 0.88rem;
+    padding: 8px 2px 6px 2px;
+  }
+}
+
+/* Responsivo para telas menores */
+@media (max-width: 900px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    padding: 32px 8px 16px 8px;
+  }
+  .footer-col {
+    max-width: 100%;
+    text-align: center;
+  }
+  .footer-col-logo {
+    justify-content: center;
+  }
+}

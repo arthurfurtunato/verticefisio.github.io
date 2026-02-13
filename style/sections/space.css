@@ -1,0 +1,131 @@
+.space-section {
+  padding: 50px 100px;
+  background: var(--color-surface);
+  color: var(--color-primary);
+}
+
+.space-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-family: "Parkinsans", sans-serif;
+}
+
+.space-section p {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: var(--color-text-muted);
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-xl);
+  margin: 24px 0;
+}
+
+.space-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.space-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Lightbox styles */
+.lightbox {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  flex-direction: column;
+}
+
+.lightbox-content {
+  max-width: 90vw;
+  max-height: 80vh;
+  border-radius: var(--radius-sm);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.lightbox .close {
+  position: absolute;
+  top: 32px;
+  right: 48px;
+  color: var(--color-white);
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 10001;
+  transition: color 0.2s;
+}
+
+.lightbox .close:hover {
+  color: #ffb300;
+}
+
+#caption {
+  color: var(--color-white);
+  margin-top: 16px;
+  font-size: 1.1em;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .space-section {
+    padding: 36px 24px;
+  }
+  .space-section h2 {
+    font-size: 2.5rem;
+  }
+  .space-section p {
+    font-size: 1.05rem;
+    text-align: justify;
+  }
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .space-image {
+    height: 180px;
+  }
+}
+
+@media (max-width: 600px) {
+  .space-section {
+    padding: 20px 4px;
+  }
+  .space-section h2 {
+    font-size: 2.5rem;
+  }
+  .space-section p {
+    font-size: 0.98rem;
+    padding: 0 19px;
+    text-align: justify;
+  }
+  .gallery {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .space-image {
+    height: 120px;
+    border-radius: 6px;
+  }
+  #caption {
+    font-size: 0.98em;
+    padding: 0 4px;
+  }
+}

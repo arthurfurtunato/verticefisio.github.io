@@ -1,0 +1,209 @@
+.info-section {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-lg);
+  margin: 32px 0 0 0;
+  padding: 0 4vw;
+}
+
+.info-card {
+  flex: 1;
+  background: var(--color-white);
+  border-radius: var(--radius-md);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  padding: 32px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition:
+    box-shadow 0.3s cubic-bezier(0.4, 2, 0.6, 1),
+    transform 0.3s cubic-bezier(0.4, 2, 0.6, 1);
+}
+
+.info-card img {
+  width: 55%;
+  height: auto;
+  border-radius: var(--radius-sm);
+  margin-bottom: 16px;
+}
+
+.info-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  transform: translateY(-10px) scale(1.04);
+}
+
+.info-card:hover .info-icon {
+  color: #0056b3;
+}
+
+.info-card:hover img {
+  filter: brightness(0.7) saturate(1.5);
+}
+
+.info-icon {
+  font-size: 2.5rem;
+  color: #007bff;
+  margin-bottom: 16px;
+}
+.info-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.info-value {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #222;
+}
+@media (max-width: 900px) {
+  .info-section {
+    flex-direction: column;
+    gap: var(--space-md);
+  }
+}
+
+.info-card-number {
+  flex: 1;
+  background: var(--color-white);
+  border-radius: var(--radius-md);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  padding: 32px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition:
+    box-shadow 0.3s cubic-bezier(0.4, 2, 0.6, 1),
+    transform 0.3s cubic-bezier(0.4, 2, 0.6, 1);
+}
+
+.info-card-number img {
+  width: 55%;
+  height: auto;
+  border-radius: var(--radius-sm);
+  margin-bottom: 16px;
+}
+
+.info-card-number:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  transform: translateY(-10px) scale(1.04);
+}
+
+.info-card-number:hover .info-icon {
+  color: #0056b3;
+}
+
+.info-card-number:hover img {
+  filter: brightness(0.7) saturate(1.5);
+}
+
+.info-card-number .info-icon {
+  font-size: 2.5rem;
+  color: #007bff;
+  margin-bottom: 16px;
+}
+.info-card-number .info-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.info-card-number .info-value {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #222;
+  animation: blur 0.3s ease-in-out;
+}
+
+@keyframes blur {
+  0% {
+    filter: blur(3px);
+  }
+  100% {
+    filter: blur(0);
+  }
+}
+
+.resource-section {
+  padding: 10px 0px 50px 0px;
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+.resource-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-family: "Parkinsans", sans-serif;
+}
+
+.resource-section p {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: var(--color-accent);
+}
+
+.resource-section .info-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+  padding: 0 24px;
+}
+
+.resource-section .info-section .info-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 24px;
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.resource-section .info-card img {
+  width: 20%;
+  height: auto;
+  border-radius: var(--radius-sm);
+  margin-bottom: 16px;
+  color: var(--color-primary);
+}
+
+.resource-section .info-card p {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: #000;
+}
+
+.resource-section .info-card:hover p {
+  color: #2563eb;
+}
+
+.resource-section .info-card:hover img {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
+
+@media (max-width: 1200px) {
+  .resource-section .info-section {
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+  }
+}
+@media (max-width: 900px) {
+  .resource-section .info-section {
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+  }
+}
+@media (max-width: 600px) {
+  .resource-section .info-section {
+    grid-template-columns: 1fr;
+  }
+}
