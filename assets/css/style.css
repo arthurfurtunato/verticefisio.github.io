@@ -194,3 +194,10 @@ a.card:hover{border-color:var(--sand);transform:translateY(-2px)}
   .cond::before{content:"";width:40px;height:3px;background:var(--sand);border-radius:2px}
   .highlight{text-align:center;border-left:0;border-top:4px solid var(--sand);border-radius:0 0 var(--radius) var(--radius)}
 }
+
+/* aviso de cookies (LGPD) · consent.js */
+.cc{position:fixed;left:max(12px,env(safe-area-inset-left,0px));right:max(12px,env(safe-area-inset-right,0px));bottom:max(12px,env(safe-area-inset-bottom,0px));z-index:80;max-width:560px;background:var(--navy);color:#fff;border-radius:var(--radius);padding:16px 18px;border:1px solid rgba(220,190,150,.4);box-shadow:0 10px 30px rgba(0,0,0,.28);display:flex;flex-direction:column;gap:12px;font-size:14px;line-height:1.5}
+.cc-act{display:flex;gap:10px;flex-wrap:wrap}
+.btn-ghost-cc{background:transparent;color:#fff;border-color:rgba(255,255,255,.45)}
+.btn-ghost-cc:hover{border-color:#fff}
+.cc-open .wa-float{display:none}
